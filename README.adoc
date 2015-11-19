@@ -1,0 +1,29 @@
+= WebSocket Sample
+
+== Introduction
+
+This is a sample project to demo two simple use case on a WebSocket-based web 
+application.
+
+1. When user click `edit`, all collaborators of policy will receive an update 
+message about status of collaborators. 
+
+2. When user click `save`, all collaborators of policy will receive an 
+notification that the policy has been updated.
+
+== What you need & How to run it
+
+This project use Redis to store status of collaborators, so to run this project 
+you will need Redis server installed on your machine and Java 8 and Maven are 
+also required.
+
+To run this project, execute `mvn spring-boot:run` under root folder of the 
+repository, then checkout `localhost:8080` and have fun.
+
+== Reference 
+
+Original sample is from https://github.com/spring-guides/gs-messaging-stomp-websocket
+
+You may read https://spring.io/guides/gs/messaging-stomp-websocket/ and 
+http://docs.spring.io/spring/docs/current/spring-framework-reference/html/websocket.html
+for better understanding how and what Spring do with WebSocket.
